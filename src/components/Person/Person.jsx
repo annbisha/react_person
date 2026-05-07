@@ -1,8 +1,6 @@
-export function Person({ person }) {
-  const { name, age, sex, isMarried, partnerName } = person;
-
+export function Person({ person: { name, age, sex, isMarried, partnerName } }) {
   const partnerMessage = isMarried
-    ? `${partnerName} is my ${sex === 'm' ? 'wife' : 'husband'}`
+    ? `My ${sex === 'm' ? 'wife' : 'husband'} is ${partnerName}`
     : 'I am not married';
 
   return (
