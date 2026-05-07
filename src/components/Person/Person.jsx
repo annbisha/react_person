@@ -1,4 +1,4 @@
-export function Person({ person: { name, age, sex, isMarried, partnerName } }) {
+export function Person({ name, age, sex, isMarried, partnerName }) {
   const partnerMessage = isMarried
     ? `My ${sex === 'm' ? 'wife' : 'husband'} is ${partnerName}`
     : 'I am not married';
